@@ -1,123 +1,162 @@
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    color: #526066;
 }
-content {
-    display: flex;
-    flex-wrap: wrap;
+
+h2, h3 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
 }
-nav {
-    text-align: center;
-    border: 1px solid black;
-    background-color: #000000;
-}
-ul {
-    text-align: center;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-li {
-    margin-top: 10px;
-    background-color: #57554b;
-}
-#toplink {
-    background-color: #000000;
-}
-header {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding-bottom: 20px;
-}
-main {
-    text-align: center;
-    background-color: #ebe8d1;
-    word-wrap: break-word;
-    padding: 0px 30px 30px 30px;
-    border-bottom: 5px solid #c9c4a4;
-}
-aside {
-    text-align: center;
-    margin-bottom: 30px;
-}
-article {
-    text-align: center;
-}
-.article-4 {
-    border-top: 2px solid #898673;
-    border-bottom: 2px solid #898673;
-    background-color: #c4c0a7;
-}
-.article-1, .article-2, .article-3 {
-    border-top: 2px solid #898673;
-    background-color: #c4c0a7;
-    padding: 0;
-}
-section {
-    text-align: center;
-    margin-bottom: 30px;
-}
-footer {
-    background-color: #57554b;
-    padding: 10px 0px; 10px 0px;
-}
+
 p {
-    margin: 10px;
+    line-height: 1.6em;
 }
-h1 {
-    margin: 10px;
+
+.l-content {
+    margin: 0 auto;
 }
-a {
-    text-decoration: none;
+
+.l-box {
+    padding: 0.5em 2em;
+}
+
+.pure-menu {
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+
+.pure-menu-link {
+    padding: .5em .7em;
+}
+
+.banner {
+    background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
+
+    height: 50%;
+    width: 100%;
+    display: table;
+}
+
+.banner-head {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-size: 2em;
     color: white;
-    font-size: 130%;
-}
-a:hover {
-    color:#cbeada;
+    font-weight: 500;
+    text-shadow: 0 1px 1px black;
 }
 
-/*MOBILE STUFFIES*/
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  article {
-        width: 100%;
-    } 
+.pure-menu-horizontal {
+    text-align: center;
 }
 
-/*TABLET STUFFIES*/
-@media only screen and (min-width: 401px) and (max-width: 1099px) {
-    article {
-        box-sizing: border-box;
-        width: 50%;
-        border: 2px solid #898673;
-    } 
+ .pricing-tables,
+ .information {
+    max-width: 980px;
+    margin: 0 auto;
+ }
+.pricing-tables {
+    margin-bottom: 3.125em;
+    text-align: center;
 }
-/*DESKTOP STUFFIES*/
-@media only screen and (min-width: 1100px) {
-    article {
-        box-sizing: border-box;
-        width: 25%;
-        border: 2px solid #898673;
-        
-    } 
-    .article-1, .article-4, .article-3, .article-2 {
-        border-left-width: 0px;
-    }
-    .article-4 {
-        border-right-width: 0px;
-    }
-    li {
-        display: inline-block;
-        padding: 20px;
-    }
-    #logo {
-        display: hidden;
-    }
+
+.pricing-table {
+    border: 1px solid #ddd;
+    margin: 0 0.5em 2em;
+    padding: 0 0 3em;
 }
-img {
-    width: 200px;
-    margin: 10px auto;
-    
-        
+
+.pricing-table-free .pricing-table-header {
+    background: #519251;
+}
+
+.pricing-table-biz .pricing-table-header {
+    background: #2c4985;
+}
+
+.pricing-table-header {
+    background: #111;
+    color: #fff;
+}
+.pricing-table-header h2 {
+    margin: 0;
+    padding-top: 2em;
+    font-size: 1em;
+    font-weight: normal;
+
+}
+
+.pricing-table-price {
+    font-size: 6em;
+    margin: 0.2em 0 0;
+    font-weight: 100;
+}
+.pricing-table-price span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.2em;
+    padding-bottom: 2em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    }
+
+.pricing-table-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.pricing-table-list li {
+    padding: 0.8em 0;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.button-choose {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    border-radius: 2em;
+    font-weight: bold;
+    position: relative;
+    bottom: -1.5em;
+}
+
+.information-head {
+    color: black;
+    font-weight: 500;
+}
+
+.footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+}
+    .footer a {
+        color: #ddd;
+    }
+
+@media(min-width: 767px) {
+
+    .banner-head {
+        font-size: 4em;
+    }
+    .pricing-table {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 480px) {
+    .banner {
+        height: 400px;
+    }
+    .banner-head {
+        font-size: 3em;
+    }
 }
