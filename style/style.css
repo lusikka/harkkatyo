@@ -1,8 +1,14 @@
 body {
     color: #526066;
 }
-img {
-    width: 170px;
+#truck {
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#medal {
+    width: 70px;
     display: block;
     margin-left: auto;
     margin-right: auto;
