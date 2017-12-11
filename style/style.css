@@ -1,6 +1,9 @@
 body {
     color: #526066;
 }
+
+/* VECTOR GFX */
+
 #truck {
     width: 160px;
     display: block;
@@ -26,6 +29,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* TEXT STUFF */
+
 h1 {
     font-weight: 800;
 }
@@ -41,17 +47,14 @@ h3 {
 h4 {
     margin: 0;
     padding-top: 20px;
-    font-size: 300%;
-    letter-spacing: 10px;
+    font-size: 290%;
+    letter-spacing: 9px;
     text-align: center;
 }
 h5 {
     font-size: 130%;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     text-align: center;
-}
-#newsinput {
-    width: 500px
 }
 .boxtext {
     line-height: 1.6em;
@@ -61,8 +64,42 @@ h5 {
     margin: 20px;
 }
 
+/* INPUT AND BUTTON*/
+
+#newsinput {
+    width: 40%;
+}
+.contactinput {
+    margin-top: 20px;
+    width: 50%;
+}
+.pure-button {
+    color: white;
+    width: 100px;
+    background-color: #5f1313;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    transition: 0.1s
+}
+.pure-button:hover {
+    background-color: #883434;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+.pure-button:active {
+    background-color: #380b0b;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+#orderbutton {
+    
+    margin: 20px auto;
+    display: block;
+}
+/* HEADER AND NAV */
+
 .pure-menu {
-    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    box-shadow: 0 1px 2px rgba(0,0,0, 0.50);
+    position: fixed;
+    top: 0px;
+    background-color: white;
 }
 
 .pure-menu-link {
@@ -75,38 +112,56 @@ h5 {
 }
 .pure-form {
     text-align: center;
+    margin: auto;
 }
 header {
-    background-color: #571623;
+    background: linear-gradient(#7b2536 60%, #b44056, white);
+    background-color: #711f2f;
     text-align: center;
     width: 100%;
-    height: 180px;
+    height: 210px;
+    margin-bottom: 40px;
 }
+.banner-head {
+    padding-top: 70px;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-top: 40px;
+    font-size: 2em;
+    color: white;
+    text-shadow: 0 3px 3px black;
+}
+
+
+/* PAGE MIDDLE CONTENT */
+
 content {
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto;
     margin-bottom: 70px;
 }
 .sectiondark {
     background-color: #f0d0d7;
     width: 100%;
     height: 250px;  
+    transition: 0.5s;
+}
+.sectiondark:hover {
+    background-color: #f7e5e9;
+}
+.sectiondark2 {
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;  
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    animation: flashing 0.7s infinite
 }
 .sectionlight {
     margin-top: 100px;
     background-color: #ffffff;
     width: 100%;
     height: 250px;  
-}
-
-.banner-head {
-    padding-top: 70px;
-    vertical-align: middle;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-size: 2em;
-    color: white;
-    text-shadow: 0 1px 1px black;
 }
 
 .pure-menu-horizontal {
@@ -140,14 +195,41 @@ footer:hover {
     margin: 25px 0;
     height: 2px;
     border: 0;
-    background: black;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+    background: rgba(0, 0, 0, 0.55);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, rgba(67, 67, 67, 0.54)));
 }
 
+@keyframes flashing {
+    0% {
+        background-color: #ff42be;
+    }
+    20% {
+        background-color: #7cff42;
+    }
+    40% {
+        background-color: #42ffb6;
+    }
+    60% {
+        background-color: #428bff;
+    }
+    80% {
+        background-color: #a842ff;
+    }
+    100% {
+        background-color: #ff42be;
+    }
+    
+}
 /* MOBILE */
 @media only screen and (max-width: 400px) {
     .pure-menu-item {
         margin: 0;
+    }
+    #stars { 
+        width: 250px;
+    }
+    h4 {
+        font-size: 180%;
     }
 }
 /* TABLET */
@@ -155,5 +237,8 @@ footer:hover {
     .pure-menu-item {
         margin-left: 20px;
         margin-right: 20px;
+    }
+     h4 {
+        font-size: 250%;
     }
 }
