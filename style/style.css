@@ -1,8 +1,13 @@
+@font-face {
+    font-family: sansation;
+    src: url('Sansation_Regular.ttf');
+}
+
 body {
+    font-family: sansation;
     color: #526066;
     margin: 0 auto;
 }
-
 /* VECTOR GFX AND OTHER IMAGES */
 .productimg {
     margin: 10px;
@@ -41,7 +46,9 @@ body {
 }
 
 /* TEXT STUFF */
-
+p {
+    font-family: sansation;
+}
 h1 {
     font-weight: 800;
 }
@@ -67,6 +74,7 @@ h5 {
     text-align: center;
 }
 h6 {
+    font-family: sansation;
     font-size: 175%;
     margin: 0;
 }
@@ -76,6 +84,16 @@ h6 {
 }
 .footertext {
     margin: 20px;
+}
+.bannertext {
+    letter-spacing: 10px;
+    padding-top: 70px;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-top: 40px;
+    font-size: 2em;
+    color: white;
+    text-shadow: 0 3px 3px black;
 }
 
 /* INPUT AND BUTTON*/
@@ -106,7 +124,6 @@ h6 {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 #orderbutton {
-    
     margin: 20px auto;
     display: block;
 }
@@ -124,8 +141,8 @@ h6 {
     font-size: 120%;
 }
 .pure-menu-item {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .pure-form {
     text-align: center;
@@ -137,15 +154,6 @@ header {
     width: 100%;
     height: 210px;
     margin-bottom: 40px;
-}
-.banner-head {
-    padding-top: 70px;
-    vertical-align: middle;
-    margin-bottom: 0;
-    margin-top: 40px;
-    font-size: 2em;
-    color: white;
-    text-shadow: 0 3px 3px black;
 }
 
 /* PAGE MIDDLE CONTENT */
@@ -237,6 +245,7 @@ content {
     padding: 15px;
     min-height: 220px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    word-wrap: break-word;
 }
 /* FOOTER */
 
@@ -299,6 +308,10 @@ footer:hover {
     .pure-menu-item {
         margin: 0;
     }
+    .pure-menu-link {
+        padding: 11px;
+        font-size: 120%;
+    }
     #stars { 
         width: 250px;
     }
@@ -316,6 +329,27 @@ footer:hover {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+    }
+    .pure-form {
+        text-align: center;
+        margin: auto;
+    }
+    .productimg {
+        margin: 0 auto;
+        float: none;
+    }
+    footer:hover {
+        height: 100px;
+    }
+    .contactinput {
+        margin-top: 20px;
+        width: 75%;
+    }
+    .bannertext {
+        letter-spacing: 5px;
+    }
+    input {
+        margin: auto;
     }
 }
 /* TABLET */
@@ -338,5 +372,12 @@ footer:hover {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+    }
+    .productimg {
+        margin: 0 auto;
+        float: none;
+    }
+    input {
+        margin: auto;
     }
 }
