@@ -152,7 +152,7 @@ header {
     background-color: #711f2f;
     text-align: center;
     width: 100%;
-    height: 210px;
+    height: 190px;
     margin-bottom: 40px;
 }
 
@@ -341,8 +341,7 @@ footer:hover {
     footer:hover {
         height: 100px;
     }
-    .contactinput {
-        margin-top: 20px;
+    #newsinput {
         width: 75%;
     }
     .bannertext {
