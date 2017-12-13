@@ -125,6 +125,7 @@ h6 {
 }
 #orderbutton {
     margin: 20px auto;
+    margin-bottom: 50px;
     display: block;
 }
 /* HEADER AND NAV */
@@ -217,9 +218,7 @@ content {
     height: 40px;
     background: #d3d3d3;
     outline: none;
-    opacity: 0.7;
     -webkit-transition: .2s;
-    transition: opacity .2s;
     border-radius: 50px;
 }
 .slider::-webkit-slider-thumb {
@@ -230,14 +229,16 @@ content {
     background: #4d4d4d;
     cursor: pointer;
     border-radius: 50px;
+    background: radial-gradient(circle, #e6e6e6, #7b7b7b);
 }
 
 .slider::-moz-range-thumb {
     width: 40px;
     height: 40px;
-    background: #4CAF50;
+    background: #4d4d4d;
     cursor: pointer;
     border-radius: 50px;
+    background: radial-gradient(circle, #e6e6e6, #7b7b7b);
 }
 .productbox {
     background-color: white;
