@@ -282,7 +282,12 @@ footer:hover {
     border: 0;
     background: rgba(0, 0, 0, 0.36);
 }
-
+/* DOCUMENT!!!!!! */
+#documentbox {
+    width: 80%;
+    height: 1000px;
+    margin: auto;
+}
 @keyframes flashing {
     0% {
         background-color: #ff42be;
@@ -351,6 +356,18 @@ footer:hover {
     input {
         margin: auto;
     }
+    #support {
+        margin-top: 100px;
+    }
+    #truck {
+       margin-top: 100px;
+    }
+    .sectiondark2 {
+        margin-top: 200px;
+    }
+    .contactinput {
+        width: 90%;
+    }
 }
 /* TABLET */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -379,5 +396,8 @@ footer:hover {
     }
     input {
         margin: auto;
+    }
+    .contactinput {
+        width: 80%;
     }
 }
